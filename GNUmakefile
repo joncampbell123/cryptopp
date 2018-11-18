@@ -148,7 +148,7 @@ endif
 
 # Default prefix for make install
 ifeq ($(PREFIX),)
-PREFIX = /usr/local
+PREFIX = /usr
 endif
 
 # http://www.gnu.org/prep/standards/html_node/Directory-Variables.html
@@ -156,7 +156,7 @@ ifeq ($(DATADIR),)
 DATADIR := $(PREFIX)/share
 endif
 ifeq ($(LIBDIR),)
-LIBDIR := $(PREFIX)/lib
+LIBDIR := $(PREFIX)/lib64
 endif
 ifeq ($(BINDIR),)
 BINDIR := $(PREFIX)/bin
